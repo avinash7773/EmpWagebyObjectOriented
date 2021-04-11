@@ -8,6 +8,7 @@ public class Employee {
 	static int wage_per_hours = 20;
 	static int hours;
 	
+	
 	int empCheck = (int)Math.floor(Math.random() * 10) % 3;
 	
 	public void empAttendance() {
@@ -29,7 +30,13 @@ public class Employee {
 	
 	public void dailyWage() {
 		double daily_wage = wage_per_hours * hours;
-		System.out.println(daily_wage);
+		System.out.println("Daily wage="+daily_wage);
+	}
+	
+	public void monthlyWage() {
+		int working_days=20;
+		double monthly_wage = wage_per_hours * (hours * working_days);
+		System.out.println("Monthly wage="+monthly_wage);
 	}
 	
 	

@@ -7,6 +7,7 @@ public class Main {
 		
 		employee.empAttendance();
 		employee.dailyWage();
+		employee.monthlyWage();
 	}
 
 }
